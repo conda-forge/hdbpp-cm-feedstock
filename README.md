@@ -1,11 +1,11 @@
-About hdbpp-cm
-==============
+About hdbpp-cm-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdbpp-cm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.tango-controls.org
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdbpp-cm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tango device server for the HDB++ Configuration Manager
 
@@ -34,7 +34,7 @@ Current build status
               <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr>
