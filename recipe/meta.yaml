@@ -1,5 +1,5 @@
 {% set name = "hdbpp-cm" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/hdbpp/hdbpp-cm/-/archive/{{ version }}/hdbpp-cm-{{ version }}.tar.gz
-  sha256: ab01221866f39052e3ba822d626a010473fcd2c4bc1fb072a6a2f6eb6736869f
+  sha256: b6c8bafbacfe43045b9bd7939514061e3316d4abbc984cc48760272c01e63aa4
 
 build:
   number: 0
-  skip: true  # [not linux]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -22,8 +22,7 @@ requirements:
     - pkg-config
   host:
     - cppzmq
-    - cpptango <9.4
-    - omniorb
+    - cpptango
     - omniorb-libs
 
 test:
