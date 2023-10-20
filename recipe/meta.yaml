@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/hdbpp/hdbpp-cm/-/archive/{{ version }}/hdbpp-cm-{{ version }}.tar.gz
-  sha256: 134e0bf1a24b7b694a69f1bcc9abf15388eb91e530974590344bf65a1ffa928b
+  sha256: b6c8bafbacfe43045b9bd7939514061e3316d4abbc984cc48760272c01e63aa4
 
 build:
   number: 0
