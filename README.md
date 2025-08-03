@@ -3,7 +3,7 @@ About hdbpp-cm-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdbpp-cm-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.tango-controls.org
+Home: https://www.tango-controls.org/
 
 Package license: GPL-3.0-or-later
 
