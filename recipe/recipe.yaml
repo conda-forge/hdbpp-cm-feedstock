@@ -14,15 +14,16 @@ source:
 
 build:
   number: 0
-  skip: win
 
 requirements:
   build:
     - cmake
-    - make
     - ${{ compiler('cxx') }}
     - ${{ stdlib("c") }}
-    - pkg-config
+    - if: unix
+      then:
+        - make
+        - pkg-config
   host:
     - cppzmq
     - cpptango
