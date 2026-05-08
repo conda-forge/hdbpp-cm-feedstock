@@ -11,7 +11,7 @@ Summary: Tango device server for the HDB++ Configuration Manager
 
 Development: https://gitlab.com/tango-controls/hdbpp/hdbpp-cm
 
-Documentation: https://tango-controls.readthedocs.io/en/latest/tools-and-extensions/archiving/HDB++.html
+Documentation: https://tango-controls.readthedocs.io/en/latest/Explanation/archiving/hdbpp.html
 
 Current build status
 ====================
@@ -59,20 +59,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cpptango9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cpptango9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_cpptango9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cpptango9.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_aarch64_cpptango10.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
@@ -101,62 +87,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_cpptango9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_cpptango9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_cpptango9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_cpptango9.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango10.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango10.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango10.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango10.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango10.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango10.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango9.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango9.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_cpptango9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango9.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_cpptango10.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
@@ -175,20 +105,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_cpptango10.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_cpptango9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_cpptango9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_cpptango9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_cpptango9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -212,20 +128,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cpptango10.3" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_arm64_cpptango9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cpptango9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cpptango9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hdbpp-cm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cpptango9.5" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -240,6 +142,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-hdbpp--cm-green.svg)](https://anaconda.org/conda-forge/hdbpp-cm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hdbpp-cm.svg)](https://anaconda.org/conda-forge/hdbpp-cm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hdbpp-cm.svg)](https://anaconda.org/conda-forge/hdbpp-cm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hdbpp-cm.svg)](https://anaconda.org/conda-forge/hdbpp-cm) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hdbpp--cm--dbg-green.svg)](https://anaconda.org/conda-forge/hdbpp-cm-dbg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hdbpp-cm-dbg.svg)](https://anaconda.org/conda-forge/hdbpp-cm-dbg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hdbpp-cm-dbg.svg)](https://anaconda.org/conda-forge/hdbpp-cm-dbg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hdbpp-cm-dbg.svg)](https://anaconda.org/conda-forge/hdbpp-cm-dbg) |
 
 Installing hdbpp-cm
 ===================
@@ -251,16 +154,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hdbpp-cm` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hdbpp-cm, hdbpp-cm-dbg` can be installed with `conda`:
 
 ```
-conda install hdbpp-cm
+conda install hdbpp-cm hdbpp-cm-dbg
 ```
 
 or with `mamba`:
 
 ```
-mamba install hdbpp-cm
+mamba install hdbpp-cm hdbpp-cm-dbg
 ```
 
 It is possible to list all of the versions of `hdbpp-cm` available on your platform with `conda`:
