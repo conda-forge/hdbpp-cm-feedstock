@@ -1,7 +1,7 @@
 cmake ${CMAKE_ARGS} \
       -G Ninja \
       -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_BUILD_TYPE=RelWithDebInfo \
       -S . -B build
 
 cmake --build build
