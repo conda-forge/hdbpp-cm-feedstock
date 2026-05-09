@@ -1,11 +1,10 @@
 schema_version: 1
 
 context:
-  name: hdbpp-cm
   version: "2.2.2"
 
-package:
-  name: ${{ name|lower }}
+recipe:
+  name: hdbpp-cm-split
   version: ${{ version }}
 
 source:
@@ -13,26 +12,62 @@ source:
   sha256: c8152a3079af9bd2a69d7c24405379b838d28e08f78f91dd15b1982fa9747d77
 
 build:
-  number: 0
+  number: 1
   skip: win
 
-requirements:
-  build:
-    - cmake
-    - ${{ compiler('cxx') }}
-    - ${{ stdlib("c") }}
-    - if: unix
-      then:
-        - make
-        - pkg-config
-  host:
-    - cppzmq
-    - cpptango
-    - omniorb-libs
+outputs:
+  - staging:
+      name: hdbpp-cm-build
+    requirements:
+      build:
+        - cmake
+        - ninja
+        - if: unix
+          then:
+            - pkg-config
+        - ${{ stdlib('c') }}
+        - ${{ compiler('cxx') }}
+      host:
+        - cppzmq
+        - cpptango
+        - omniorb-libs
+    build:
+      script:
+        file: build
 
-tests:
-  - script:
-      - hdb++cm-srv --help 2>&1 | grep -i usage
+  - package:
+      name: hdbpp-cm
+    inherit: hdbpp-cm-build
+    build:
+      files:
+        - if: unix
+          then:
+            - bin/hdb++cm-srv
+    tests:
+      - script:
+          - hdb++cm-srv --help 2>&1 | grep -i usage
+
+  - package:
+      name: hdbpp-cm-dbg
+    inherit:
+      from: hdbpp-cm-build
+      run_exports: false
+    build:
+      skip:
+        - not linux
+      dynamic_linking:
+        # Prevent dbg file to be modified
+        # Will raise CRC mismatch otherwise!
+        binary_relocation: false
+      files:
+        - lib/debug/hdb++cm-srv.dbg
+    requirements:
+      run:
+        - ${{ pin_subpackage('hdbpp-cm', exact=True) }}
+    tests:
+      - package_contents:
+          files:
+            - lib/debug/hdb++cm-srv.dbg
 
 about:
   license: GPL-3.0-or-later
@@ -40,8 +75,9 @@ about:
   summary: Tango device server for the HDB++ Configuration Manager
   homepage: https://www.tango-controls.org
   repository: https://gitlab.com/tango-controls/hdbpp/hdbpp-cm
-  documentation: https://tango-controls.readthedocs.io/en/latest/tools-and-extensions/archiving/HDB++.html
+  documentation: https://tango-controls.readthedocs.io/en/latest/Explanation/archiving/hdbpp.html
 
 extra:
+  feedstock-name: hdbpp-cm
   recipe-maintainers:
     - beenje
